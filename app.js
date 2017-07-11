@@ -4,12 +4,11 @@ var inpuWord = document.getElementById('inputWord'),
  	ul = document.getElementById('list'),
  	dictionary = []
  
-
 btnRevert.onclick = () => {	
 	word = inputWord.value;
 	dictionary.push(revertWord(word));
 	addLi();
-};
+}
 
 function addLi(){
 	var li = document.createElement('li');
