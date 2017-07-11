@@ -6,13 +6,13 @@ var inpuWord = document.getElementById('inputWord'),
  
 btnRevert.onclick = () => {	
 	word = inputWord.value;
-	dictionary.push(revertWord(word));
+	dictionary.push(word);
 	addLi();
 }
 
 function addLi(){
 	var li = document.createElement('li');
-	 	textNode = document.createTextNode(dictionary[dictionary.length - 1]);
+	 	textNode = document.createTextNode(revertWord(dictionary[dictionary.length - 1]));
 
 	li.appendChild(textNode);
 	ul.appendChild(li);
